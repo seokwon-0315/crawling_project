@@ -15,15 +15,15 @@ class AptTradeScrapy(scrapy.Item):
 
     def to_dict(self):        
         return {            
-            '아파트': self['apt_name'],            
-            '시/도': self['address_1'],            
-            '군/구': self['address_2'],            
-            '동/읍/면': self['address_3'],            
-            '번지': self['address_4'],            
-            '전체주소': self['address'],            
-            '연식': self['age'],            
-            '층': self['level'],            
-            '면적': self['available_space'],            
-            '거래일자': self['trade_date'],            
-            '매매가격': self['trade_amount']        
+            'apt_name': self['apt_name'],            
+            'address_1': self['address_1'],            
+            'address_2': self['address_2'],            
+            'address_3': self['address_3'],            
+            'address_4': self['address_4'],            
+            'address': self['address'],            
+            'age': self['age'],            
+            'level': self['level'],            
+            'available_space': self['available_space'],            
+            'trade_date': self['trade_date'],            
+            'trade_amount': self['trade_amount']        
             }
