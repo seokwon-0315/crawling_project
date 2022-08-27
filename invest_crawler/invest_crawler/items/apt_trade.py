@@ -8,7 +8,7 @@ class AptTradeScrapy(scrapy.Item):
     address_4 = scrapy.Field()    
     address = scrapy.Field()    
     age = scrapy.Field()    
-    level = scrapy.Field()    
+    floor = scrapy.Field()    
     available_space = scrapy.Field()    
     trade_date = scrapy.Field()    
     trade_amount = scrapy.Field()
@@ -22,7 +22,7 @@ class AptTradeScrapy(scrapy.Item):
             'address_4': self['address_4'],            
             'address': self['address'],            
             'age': self['age'],            
-            'level': self['level'],            
+            'floor': self['floor'],            
             'available_space': self['available_space'],            
             'trade_date': self['trade_date'],            
             'trade_amount': self['trade_amount']        
